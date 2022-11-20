@@ -7,6 +7,10 @@ table{
     width: 100%;
 }
 
+tfoot{
+    font-weight: bold;
+}
+
 .productContainer{
     width: 70%;
     margin: 20px;
@@ -34,12 +38,13 @@ table{
 }
 
 .crossButton{
-    font-weight: 900;
+    font-weight: 700;
     cursor: pointer;
     color: black;
 }
 
 .crossButton:hover{
+    font-weight: 900;
     color: red;
 }
 
@@ -64,7 +69,7 @@ table{
     padding: 16px 0;
     position: absolute;
     color: #ffffff;
-    background-color: rgba(26, 26, 26, 0.4);
+    background-color: rgba(26, 26, 26, 0.6);
 }
 
 .productName{
