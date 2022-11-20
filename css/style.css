@@ -8,8 +8,8 @@ table{
 }
 
 .productContainer{
-    width: 100%;
-    margin: 20px auto;
+    width: 70%;
+    margin: 20px;
     text-align: center;
     display: inline-block;
     transition: 0.5s;
@@ -22,10 +22,10 @@ table{
     display: inline-block;
     position: fixed;
     right: 0px;
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s;
     overflow-y: auto;
-    z-index: -1;
+    z-index: 1;
 }
 
 .seeCart, .unseenCart{
