@@ -82,7 +82,7 @@ table{
 .addToCartButton{
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    left: 25px;
     z-index: -1;
     transition: 0.5s;
     opacity: 0;
