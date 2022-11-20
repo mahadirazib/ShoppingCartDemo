@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+    <div class="productContainer">
+
+        <h1>Shopping Cart <span class="seeCart" onclick="seeCart(this)">⬅</span></h1>
+        <p>Hover over the images to see the <q>Add to Cart</q> button</p>
+
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Vintage Car</h4>
+                <h3 class="productPrice">4000$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/1.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Modern Car</h4>
+                <h3 class="productPrice">3500$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/2.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Modern Car</h4>
+                <h3 class="productPrice">5000$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/3.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Motorcycle</h4>
+                <h3 class="productPrice">1500$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/4.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Helicopter</h4>
+                <h3 class="productPrice">55000$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/5.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Motorcycle</h4>
+                <h3 class="productPrice">4000$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/6.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Royal palace</h4>
+                <h3 class="productPrice">9200$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/7.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Royal palace</h4>
+                <h3 class="productPrice">8800$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/8.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Royal palace</h4>
+                <h3 class="productPrice">10500$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/9.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Wrist Watch</h4>
+                <h3 class="productPrice">520$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/10.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Wrist Watch</h4>
+                <h3 class="productPrice">1500$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/11.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+    
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Vintage Watch</h4>
+                <h3 class="productPrice">1830$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/12.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Classic Pen</h4>
+                <h3 class="productPrice">120$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/13.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="productText">
+                <h4 class="productName">Modern Pen</h4>
+                <h3 class="productPrice">250$</h3>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="images/14.jpg" alt="">
+                <button class="addToCartButton" onclick="addToCart(this)">Add to cart</button>
+            </div>
+        </div>
+
+
+    
+    </div>
+
+
+    <div class="cartDetails">
+        <h1>Cart Details</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>price</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody class="cartList">
+
+            </tbody>
+            <tfoot>
+                <td>Total</td>
+                <td id="showPrice"> 0 </td>
+                <td>$</td>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+table{
+    width: 100%;
+}
+
+.productContainer{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.cartDetails{
+    width: 25%;
+    height: 90vh;
+    margin: 20px;
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    opacity: 0;
+    transition: 0.5s;
+    overflow-y: auto;
+    z-index: -1;
+}
+
+.seeCart, .unseenCart{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.crossButton{
+    font-weight: 900;
+    cursor: pointer;
+    color: black;
+}
+
+.crossButton:hover{
+    color: red;
+}
+
+.product{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.imageContainer{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.productText{
+    width: 100%;
+    padding: 16px 0;
+    position: absolute;
+    color: #ffffff;
+    background-color: rgba(26, 26, 26, 0.4);
+}
+
+.productName{
+    font-size: 20px;
+    padding: 0 16px;
+    margin: 0;
+}
+
+.productPrice{
+    font-size: 15px;
+    padding: 0 16px;
+    margin: 0;
+}
+
+.addToCartButton{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+.productImage{
+    width: 200px;
+    height: 200px;
+}
