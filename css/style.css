@@ -16,7 +16,7 @@ tfoot{
     margin: 20px;
     text-align: center;
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .cartDetails{
@@ -27,14 +27,14 @@ tfoot{
     position: fixed;
     right: 0px;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.3s;
     overflow-y: auto;
     z-index: 1;
 }
 
 .seeCart, .unseenCart{
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .crossButton{
@@ -60,15 +60,15 @@ tfoot{
     height: 200px;
     width: 100%;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .productText{
     width: 100%;
     padding: 16px 0;
     position: absolute;
-    color: #ffffff;
-    background-color: rgba(26, 26, 26, 0.6);
+    color: white;
+    background-color: rgba(26, 26, 26, 0.5);
 }
 
 .productName{
@@ -88,7 +88,7 @@ tfoot{
     bottom: 8px;
     left: 25px;
     z-index: -1;
-    transition: 0.5s;
+    transition: 0.3s;
     opacity: 0;
 }
 
