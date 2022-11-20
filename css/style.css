@@ -38,13 +38,12 @@ tfoot{
 }
 
 .crossButton{
-    font-weight: 700;
+    font-weight: 900;
     cursor: pointer;
     color: black;
 }
 
 .crossButton:hover{
-    font-weight: 900;
     color: red;
 }
 
