@@ -1,5 +1,8 @@
 
 
+// Getting name and price of the product that has been clicked on.
+// Then creating table row(tr) element and adding content to the element.
+// And finally adding element to the cart table.
 
 let addToCart = (el)=>{
     let ele = el.parentElement.parentElement.getElementsByClassName("productText");
@@ -18,33 +21,40 @@ let addToCart = (el)=>{
 
 
 
+// Specify the element that has to be deleted
+// Then remove the element from the cart table.
 
-
-
-function seeCart(ele){
-    document.querySelector(".productContainer").style.width = "70%";
-    document.querySelector(".productContainer").style.margin = "20px";
-    document.querySelector(".cartDetails").style.opacity = "1";
-    document.querySelector(".cartDetails").style.zIndex = "1";
-    ele.innerText = "➡";    
-    ele.setAttribute("onclick", "unseenCart(this)");
-}
-
-function unseenCart(ele){
-    document.querySelector(".productContainer").style.width = "100%";
-    document.querySelector(".productContainer").style.margin = "20px auto";
-    document.querySelector(".cartDetails").style.opacity = "0";
-    document.querySelector(".cartDetails").style.zIndex = "-1";
-    ele.innerText = "⬅";
-    ele.setAttribute("onclick", "seeCart(this)");
+function removeProduct(ele){
+    let parent = ele.parentElement.parentElement;
+    parent.removeChild(ele.parentElement);
+    calculatePrice();
+    console.log("Product removed successfully");
 }
 
 
 
 
 
+// Calculating the price of products.
+// It will be called when a product is added or removed.
+
+function calculatePrice(){
+    let num = document.querySelectorAll(".cartPrice").length;
+    let sum = 0;
+    let ele;
+    for(let i=0; i<num; i++){
+        ele = document.querySelectorAll(".cartPrice")[i].innerText;
+        sum += Number(ele);
+    }
+
+    document.querySelector("#showPrice").innerHTML = sum;
+}
 
 
+
+
+// this for loop is to add eventListenner(mouseenter and mouseleave) to the products.
+// It is for UI. 
 
 let num = document.querySelectorAll(".product").length;
 
@@ -66,31 +76,27 @@ for(let i=0; i<num; i++){
 
 
 
+// seeCart and unseenCart is for toggling the cart details.
+// It is also for UI.
 
-
-function removeProduct(ele){
-    let parent = ele.parentElement.parentElement;
-    parent.removeChild(ele.parentElement);
-    calculatePrice();
-    console.log("Product removed successfully");
+function seeCart(ele){
+    document.querySelector(".productContainer").style.width = "70%";
+    document.querySelector(".productContainer").style.margin = "20px";
+    document.querySelector(".cartDetails").style.opacity = "1";
+    document.querySelector(".cartDetails").style.zIndex = "1";
+    ele.innerText = "➡";    
+    ele.setAttribute("onclick", "unseenCart(this)");
 }
 
-
-
-
-
-
-function calculatePrice(){
-    let num = document.querySelectorAll(".cartPrice").length;
-    let sum = 0;
-    let ele;
-    for(let i=0; i<num; i++){
-        ele = document.querySelectorAll(".cartPrice")[i].innerText;
-        sum += Number(ele);
-    }
-
-    document.querySelector("#showPrice").innerHTML = sum;
+function unseenCart(ele){
+    document.querySelector(".productContainer").style.width = "100%";
+    document.querySelector(".productContainer").style.margin = "20px auto";
+    document.querySelector(".cartDetails").style.opacity = "0";
+    document.querySelector(".cartDetails").style.zIndex = "-1";
+    ele.innerText = "⬅";
+    ele.setAttribute("onclick", "seeCart(this)");
 }
+
 
 
 
